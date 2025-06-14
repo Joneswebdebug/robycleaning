@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  padding-top: 60px;
+}
+
+.top-bar {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideshow 56s infinite;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 2rem;
+}
+
+@keyframes slideshow {
+  0%, 12.5% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHnJgIfxsxEOhHjw7CwFA-twQhcOa1q5XKQ&s'); }
+  12.5%, 25% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9muy1KynhGCmiKHdxXZoZ2hA53gO8UO18g&s'); }
+  25%, 37.5% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMiw29kyJgA2jiKCd20W6loLyyjTlPNIbww&s'); }
+  37.5%, 50% { background-image: url('https://dale.co.ke/wp-content/uploads/2025/04/mattress-cleaning-services-nairobi-kenya.jpg'); }
+  50%, 62.5% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvnQ5VlmqdT2ftXz52rxrAISIZAbatUerK-g&s'); }
+  62.5%, 75% { background-image: url('https://www.allrecipes.com/thmb/Fy2LrRzYSLYXSAOljvHNGrE1jc4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1219641454-2000-2a52e29d91ad4e8da374d59afc0de939.jpg'); }
+  75%, 87.5% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4EylBmOfyN6suBAyR9cGppkswtMuNWNwEFw&s'); }
+  87.5%, 100% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxp_hDBnFeJgXTDIaLYCbha6t3Y3gva-Z_lw&s'); }
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+.btn.whatsapp {
+  background: #25D366;
+}
+
+nav {
+  background: #20B2AA;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo {
+  height: 70px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.company-name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.service-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#contact {
+  background: linear-gradient(135deg, #20B2AA 0%, #007BFF 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateX(10px);
+  background: rgba(255,255,255,0.2);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-details h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact-details p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.95);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.form-container h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  margin: 0.75rem 0;
+  padding: 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: #fff;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #20B2AA;
+  box-shadow: 0 0 0 3px rgba(32, 178, 170, 0.1);
+  transform: translateY(-2px);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+  grid-column: 1 / -1;
+}
+
+form button {
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, #28a745, #20B2AA);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
+}
+
+form button:active {
+  transform: translateY(0);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #e9ecef;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #20B2AA;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 1.5rem;
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.location-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.location-info {
+  text-align: left;
+}
+
+.service-areas {
+  margin-top: 2rem;
+}
+
+.area-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.area-card h4 {
+  color: #20B2AA;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.area-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.area-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-cta {
+  background: linear-gradient(135deg, #20B2AA, #007BFF);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contact-cta h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 1rem 1.5rem;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.cta-btn:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+.business-hours {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.business-hours h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .nav-logo {
+    height: 45px;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  .location-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
